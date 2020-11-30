@@ -107,18 +107,19 @@
   
   .svg {
     display: block;    
-
+    margin-top: 20px; 
   }
 
   .cta_txt  {
     position: relative;
-    left: 20px;    
+    left: 20px;  
+    margin-bottom: 20px;  
   }
   
   .cta_btn  {
     position: relative;
     left: 20px;
-    transform: translateY(0px);
+    transform: translateY(0px);    
   }
   
   .cta_btn div {
@@ -130,6 +131,6 @@
   }
 
   .navbar > div:nth-child(2)  {
-    margin-right: 20px;
+    padding-right: 20px;
   }
 }
