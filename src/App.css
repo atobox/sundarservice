@@ -71,7 +71,7 @@
   z-index: 1;
   font-weight: 800;
   width: 300px;
-  color: #3d3c3c;  
+  color: #696767;  
 }
 
 .cta_btn  {
@@ -99,7 +99,8 @@
 
 @media (max-width: 600px) {
   .svg img {
-    width: 100%;    
+    width: 450px;
+    height: auto;    
     position: relative;
     left: 10px;  
     top: 10px;
