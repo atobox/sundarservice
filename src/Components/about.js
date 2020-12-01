@@ -4,7 +4,7 @@ export default function About() {
 
     return (
         <div className="abt_sec" id="about">
-            <div style={{width:"1000px", margin:"0 auto", height: "320px"}}>
+            <div style={{width:"1100px", margin:"0 auto", height: "320px"}}>
                 <img src={abt_img} alt="abt_img" />
                 <div className="abt_art">                
                     <span className="abt_qstn">Who we are and why should you <span className="in">care</span>?</span><br/>
