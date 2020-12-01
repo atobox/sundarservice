@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 
 :root {
   --mwd: 425px;
@@ -101,26 +104,33 @@
 }
 
 .abt_sec  {
-  position: relative;
-  top: 30px;
+  /*position: relative;*/
+  margin-top: 50px;
   background: #fffbec;
-  overflow-x: hidden;
+  overflow: hidden;
+  height: 330px;
+  width: 100vw;
+  min-width: var(--mwd); 
 }
 
 .abt_sec img {
   display: block;
   margin-left: auto;
   border-radius: 50%;
-  transform: translateX(100px);
+  /*transform: translateX(100px);*/
+  /*margin-top: 20px;*/
   width: 400px;
-  height: 400px;
-  min-width: var(--mwd);  
+  height: 100%;   
+  float: right;
 }
 
 .abt_art  {
-  position: absolute;
-  top: 100px;
-  left: 50px;
+  /*position: absolute;*/
+  /*background-color: khaki;*/
+  display: block;    
+  margin: 10px auto 10px 0;
+  width: 550px;
+  height: 100%;
 }
 
 .abt_qstn {
@@ -133,14 +143,15 @@
   display: block;
   width: 500px;
   margin: 20px auto 0 auto;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
   color: gray;
   text-align: justify;
+  /*background-color: lightblue;*/
 }
 
 .store_sec  {
-  top: 60px;
+  top: 50px;
   width: 100%;
   height: 350px;
   display: block;
