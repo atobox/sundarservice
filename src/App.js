@@ -20,7 +20,9 @@ function App() {
           </ul>
         </div>        
       </div>     
+      <Book />
       <About />
+      <Store />
     </div>
   );
 }

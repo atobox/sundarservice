@@ -1,4 +1,7 @@
 
+:root {
+  --mwd: 425px;
+}
 .navbar img {
   height: 100px;
   width: 100px;
@@ -60,7 +63,7 @@
 
 .svg img {
   width: 70%;
-  position: absolute;
+  position: relative;
   left: 0px;  
 }
 
@@ -97,10 +100,158 @@
   margin-top: 15px;
 }
 
+.abt_sec  {
+  position: relative;
+  top: 30px;
+  background: #fffbec;
+  overflow-x: hidden;
+}
+
+.abt_sec img {
+  display: block;
+  margin-left: auto;
+  border-radius: 50%;
+  transform: translateX(100px);
+  width: 400px;
+  height: 400px;
+  min-width: var(--mwd);  
+}
+
+.abt_art  {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}
+
+.abt_qstn {
+  font-weight: bold;
+  font-size: 30px;
+  color:#1a6ece;
+}
+
+.abt_ans  {
+  display: block;
+  width: 500px;
+  margin: 20px auto 0 auto;
+  font-size: 20px;
+  font-weight: 600;
+  color: gray;
+  text-align: justify;
+}
+
+.store_sec  {
+  top: 60px;
+  width: 100%;
+  height: 350px;
+  display: block;
+  position: relative;  
+  overflow-x: auto;
+  overflow-y: hidden;
+  /*overflow-x: auto;  */
+  padding-bottom: 40px;
+  /*background-color: khaki;*/
+}
+
+.store_sec > img {
+  /*width: 400px;*/
+  height: inherit;
+  transform: translateX(-80px);  
+  /*left: -80px;*/
+  display: inline-block;
+  border-radius: 30%;
+  border-right: 10px groove #1a6ece;
+  /*border-right-style: groove;*/
+}
+
+.prd {
+  display: inline-block;
+  width: auto;
+  height: inherit;
+  /*background: khaki;*/
+  /*overflow-x: auto;*/  
+  /*transform: translateX(-80px); */
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  /*background-color: khaki;*/
+  /*white-space: nowrap;*/
+}
+
+.prdcrd {
+  width: 200px;
+  height: 90%;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.2), 0 0 20px rgba(0,0,0,0.2) ;
+  padding: 5px;
+  display: block;
+  float: left;
+  margin-right: 40px;
+  border-radius: 20px;
+  position: relative;
+  margin-top: 20px;
+  /*white-space: normal;*/
+}
+
+.prdcrd > img  {
+  height: 180px;
+  width: 150px;  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prdcrd > .title {
+  font-size: 15px;
+  display: block;
+  height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.prdcrd > p {
+  font-size: 15px;  
+}
+
+.slprc {
+  display: inline-block;
+  text-decoration: line-through;
+  color:gray;
+}
+
+.orgprc {
+  display: inline-block;  
+  color:black;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.prdcrd > button {
+  width: 90%;
+  height: 40px;
+  position: absolute;
+  display: block;
+  bottom: 20px;
+  left: 12px;
+  outline: none;
+  background: #f5623d;
+  border: sienna;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.prdcrd > button:hover {
+  cursor: pointer;
+}
+
+
 @media (max-width: 600px) {
-  .svg img {
-    width: 450px;
+  .svg img {    
     height: auto;    
+    min-width: 425px;
+    width: 100%;
     position: relative;
     left: 10px;  
     top: 10px;
