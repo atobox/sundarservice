@@ -10,7 +10,7 @@ function PrdCard(props) {
             <span className="title">{props.title}</span>                        
             <p className="orgprc">&#8377;{props.sellingprice}</p>
             <p className="slprc">&#8377;{props.orginalprice}</p>
-            <button><i class="fas fa-shopping-cart" aria-hidden="true" style={{marginRight: "10px"}}></i>
+            <button><i className="fas fa-shopping-cart" aria-hidden="true" style={{marginRight: "10px"}}></i>
             BUY NOW</button>            
         </div>
     );

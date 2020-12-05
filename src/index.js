@@ -4,10 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+const el = () => {
+  return (window.innerWidth > 900 ? (
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    ) : (<h2><center>Website is available for only desktop.</center></h2>));  
+  }
+
+ReactDOM.render(el(),
   document.getElementById('root')
 );
 
